@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        window.location.href = "Main/pages/html.com";
-    </script>
-    <script>
-    window.embeddedChatbotConfig = {
-    chatbotId: "BUvjh9hH6VI5c9s_qU6Lb",
-    domain: "www.chatbase.co"
-    }
+        // Chatbot configuration
+        window.embeddedChatbotConfig = {
+            chatbotId: "BUvjh9hH6VI5c9s_qU6Lb",
+            domain: "www.chatbase.co"
+        };
     </script>
     <script
-    src="https://www.chatbase.co/embed.min.js"
-    chatbotId="BUvjh9hH6VI5c9s_qU6Lb"
-    domain="www.chatbase.co"
-    defer>
+        src="https://www.chatbase.co/embed.min.js"
+        defer>
+    </script>
+    <script>
+        // Redirect after 3 seconds
+        setTimeout(() => {
+            window.location.href = "Main/pages/html.com";
+        }, 3000);
     </script>
 </head>
 <body>
-    <p>Redirecting to Google...</p>
+    <p>Redirecting to the new page in 3 seconds...</p>
 </body>
 </html>
